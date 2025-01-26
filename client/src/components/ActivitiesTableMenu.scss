@@ -1,0 +1,31 @@
+.activities-table-menu {
+  &__search {
+    width: 20%;
+
+    input {
+      height: 25px;
+      line-height: 1.1em;
+      border: none;
+      background: inherit;
+      outline: none;
+      font-size: 1.1em;
+      border-bottom: 1px solid #d0d0d0;
+      transition: .1s ease-in-out;
+
+      &::placeholder {
+        color: grey;
+        opacity: 1;
+      }
+    }
+
+    input:focus,
+    input:valid {
+      color: #2c3e50;
+      ;
+    }
+
+    input:focus-within {
+      transform: scale(1.04);
+    }
+  }
+}

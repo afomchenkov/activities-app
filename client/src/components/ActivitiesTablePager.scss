@@ -1,0 +1,23 @@
+.activities-table-pager {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__buttons {
+    display: flex;
+
+    >button {
+      margin: .2em;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        background-color: #ebebeb;
+        transition: 0.2s;
+      }
+    }
+  }
+}

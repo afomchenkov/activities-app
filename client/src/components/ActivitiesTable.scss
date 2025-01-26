@@ -1,0 +1,30 @@
+.activities-table {
+  &__container {
+    min-height: 250px;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      outline: 1px solid #f3f3f3;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody>tr:hover {
+      background-color: #dedcdc;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: 1px solid #f3f3f3;
+  }
+}
