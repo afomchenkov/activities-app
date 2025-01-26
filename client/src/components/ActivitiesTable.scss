@@ -20,6 +20,20 @@
     }
   }
 
+  &__table-col {
+    white-space: nowrap;
+    font: inherit;
+    text-align: start;
+    font-weight: 800;
+  }
+
+  &__row-cell {
+    padding: 0.4em 1em;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    font-weight: 300;
+  }
+
   &__overlay {
     display: flex;
     align-items: center;

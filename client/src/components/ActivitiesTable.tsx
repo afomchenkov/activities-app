@@ -5,6 +5,7 @@ import "./ActivitiesTable.scss";
 type TableColumn = {
   key: string;
   translation: string;
+  width: string;
 };
 
 type ActivitiesTableProps = {
@@ -24,7 +25,9 @@ const ActivitiesTableComponent: FC<ActivitiesTableProps> = ({
 
   const mapToRow = (data: TableActivity) => {
     return columnsConfig.map((column) => (
-      <td key={column.key}>{data[column.key as never]}</td>
+      <td key={column.key} className="activities-table__row-cell">
+        {data[column.key as never]}
+      </td>
     ));
   };
 
@@ -33,9 +36,20 @@ const ActivitiesTableComponent: FC<ActivitiesTableProps> = ({
       <table>
         <thead>
           <tr>
-            {columnsConfig.map((column) => (
-              <th key={column.key}>{column.translation}</th>
-            ))}
+            {columnsConfig.map((column) => {
+              const { key, translation, width = "inherit" } = column;
+
+              return (
+                <th
+                  key={key}
+                  className="activities-table__table-col"
+                  scope="col"
+                  style={{ width }}
+                >
+                  {translation}
+                </th>
+              );
+            })}
           </tr>
         </thead>
         <tbody>
