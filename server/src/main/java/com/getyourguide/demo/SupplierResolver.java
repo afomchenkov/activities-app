@@ -1,5 +1,6 @@
 package com.getyourguide.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
@@ -15,6 +16,7 @@ import java.util.List;
 class SupplierResolver {
     private final SupplierService supplierService;
 
+    @Autowired
     public SupplierResolver(SupplierService supplierService) {
         this.supplierService = supplierService;
     }

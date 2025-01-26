@@ -1,5 +1,6 @@
 package com.getyourguide.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
@@ -24,6 +25,7 @@ class ActivityResolver {
     private final SupplierService supplierService;
     private final ActivityService activityService;
 
+    @Autowired
     public ActivityResolver(ActivityService activityService, SupplierService supplierService) {
         this.activityService = activityService;
         this.supplierService = supplierService;
