@@ -21,4 +21,3 @@
 ![Screenshot 2025-01-26 at 13 59 11](https://github.com/user-attachments/assets/4db530b5-f1a4-4b6d-a8c0-f00b6c380d82)
 
 ![Screenshot 2025-01-26 at 13 24 22](https://github.com/user-attachments/assets/9da3b8b9-4f51-4820-a47f-ffbc39cb0d49)
-
