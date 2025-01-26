@@ -1,11 +1,18 @@
 services:
   spring-boot-app:
+    container_name: spring-boot-app
     build:
       context: server
     ports:
       - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/graphiql"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
   react-app:
+    container_name: react-app
     build:
       context: client
     ports:
