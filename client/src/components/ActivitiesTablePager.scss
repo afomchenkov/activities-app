@@ -1,7 +1,13 @@
+@import "../variables";
+
 .activities-table-pager {
   &__container {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $min-width-md) {
+      margin-top: 1em;
+    }
   }
 
   &__buttons {

@@ -1,3 +1,5 @@
+@import "../variables";
+
 .activities-table-menu {
   &__search {
     width: 20%;
@@ -11,6 +13,7 @@
       font-size: 1.1em;
       border-bottom: 1px solid #d0d0d0;
       transition: .1s ease-in-out;
+      margin-bottom: .5em;
 
       &::placeholder {
         color: grey;
@@ -21,11 +24,20 @@
     input:focus,
     input:valid {
       color: #2c3e50;
-      ;
     }
 
     input:focus-within {
-      transform: scale(1.04);
+      transform: scale(1.02);
+    }
+  }
+
+  @media screen and (max-width: $max-width-sm) {
+    input {
+      margin-bottom: 1em;
+    }
+
+    input:focus-within {
+      transform: none;
     }
   }
 }
