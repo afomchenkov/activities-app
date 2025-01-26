@@ -1,0 +1,32 @@
+type Query {
+  activitiesList(limit: Int!, offset: Int!, search: String): ActivitiesList!
+  activities: [Activity!]!
+  activity(id: Int!): Activity
+  suppliers: [Supplier!]!
+  supplier(id: Int!): Supplier
+}
+
+type Supplier {
+  id: ID!
+  name: String!
+  address: String!
+  zip: String!
+  city: String!
+  country: String!
+}
+
+type Activity {
+  id: ID!
+  title: String!
+  price: Float!
+  currency: String!
+  rating: Float!
+  specialOffer: Boolean!
+  supplier: Supplier
+}
+
+type ActivitiesList {
+  activities: [Activity]
+  totalCount: Int
+  offset: Int
+}
