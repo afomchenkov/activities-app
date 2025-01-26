@@ -1,22 +1,6 @@
-# Objective
+# Activities sample app
 
-## Key Points
-
-- We want to assess your skills as a generalist software engineer.
-- We are looking for people who are able to work on a variety of projects and technologies.
-- We are not explicitly looking for expertise in a specific technology or domain. An ideal candidate would be able to work with a variety of technologies.
-
-We would like you to build a web application that allows users to search for activities.
-The project is meant to be a simple application that you can build in a few hours.
-We are not looking for a production-ready application but we will assess your project both in terms of quality (user experience/use of best practices/robust architecture) and potential (scalability).
-
-In this repository you will find a list of activities that you can use to build your application (please find the file `activities.json` in the `spring-boot-service/src/main/resources/static` folder).
-
-We bootstrapped in advance 2 skeleton applications for the back end and the front end: you will find a skeleton SpringBoot backend application and a VueJS frontend application.
-
-You can use them to speed up the implementation, or you can start from scratch choosing the technologies you are most familiar with, or you think most appropriate to fulfill the requirements.
-
-# Requirements
+## Description
 
 - You need to provide a backend application meant to expose an API (REST or GraphQL).
 - You need to provide a client application consuming the API exposed by the previous application and implement a UI.
@@ -34,25 +18,7 @@ You can use them to speed up the implementation, or you can start from scratch c
 - Please also document any features/improvements you left out in favor of time, preferably with sufficient details on "what, why & how".
 - Additionally, make sure any assumptions you made are noted down.
 
-# How to submit your work
+![Screenshot 2025-01-26 at 13 59 11](https://github.com/user-attachments/assets/4db530b5-f1a4-4b6d-a8c0-f00b6c380d82)
 
-Please clone this repository and send us a zip file containing your work.
+![Screenshot 2025-01-26 at 13 24 22](https://github.com/user-attachments/assets/9da3b8b9-4f51-4820-a47f-ffbc39cb0d49)
 
-Also, please avoid bundling `node_modules` or other installed dependency directories in your zip file.
-
-⚠️ **Make sure not to publish your work on a public repository.** ⚠️
-
-We will grade your project after submission and eventually invite you for a remote live interview with our engineers.
-
-Depending on the role you are applying for and your level of expertise, you have the flexibility to put a stronger focus in the implementation of either the backend or the client application. We require submissions to have basic functionality on the side of the stack you are less familiar with, however you are welcome to focus your efforts on your focus area, allowing us to assess your skills in your preferred domain.
-
-If you opt for this approach, please specify in your notes which application you would like us to thoroughly review. Alternatively, if you feel confident in both the backend and client application, we encourage you to state clearly in your notes that you would like a comprehensive review of both. We are excited to thoroughly evaluate your work across the entire stack.
-
-Creativity is also encouraged, and while we do not expect you to add a lot more on top of the basic requirements you have freedom to showcase your skills.
-
-# Presentation
-
-- We will ask you to present your work. Please be prepared to present your work, demo it, and explain your choices.
-- We will ask clarifying questions about your code and your design choices.
-- In addition to the presentation we will ask you to refactor the code, add features, or fix bugs:
-  please be prepared to share your screen during the interview and to code live with us.
